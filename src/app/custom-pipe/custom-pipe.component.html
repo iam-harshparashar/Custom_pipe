@@ -1,0 +1,8 @@
+<p>custom-pipe works!</p>
+<form [formGroup]="formUppercase" (ngSubmit)="onSubmit()">
+    <!-- <input [(ngModel)]="title" class="form-control"/> -->
+    <input id="title" type="text" formControlName="title"/>
+    <input type="submit"/>
+</form>
+
+<span>{{this.title1 | case}}</span>
